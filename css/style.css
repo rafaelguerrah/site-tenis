@@ -1,0 +1,219 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@400;700;900&family=Racing+Sans+One&family=Roboto:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Sriracha&display=swap');
+
+:root {
+    --fonte-padrao: "Passion One", serif;
+    --fonte-destaque: "Source Sans 3", serif;
+    --fonte-nav: "Lato", serif;
+    --font-titulo: "Racing Sans One", serif;
+    --color-header: #F2F2F2;
+    --color-section1: #FC9D6D;
+    --color-black: #000000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--color-header);
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 100px;
+    width: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 10px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 12px;
+}
+
+li a {
+    text-decoration: none;
+    font-family: var(--fonte-nav);
+    color: var(--color-black);
+    font-size: 1.2em;
+    padding: 8px 12px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+li a:hover {
+    color: #F2F2F2;
+    background-color: var(--color-black);
+}
+
+.localizacao {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--color-section1);
+    height: 100px;
+}
+
+.localizacao .item {
+    display: flex;
+    align-items: center;
+}
+
+.localizacao img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+.localizacao p {
+    color: var(--color-header);
+    font-size: 1.2em;
+}
+
+.img-fundo {
+    height: 600px;
+    background-image: url(../img/img-main.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.caixa-branca {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    height: auto;
+    background-color: var(--color-header);
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-branca h1 {
+    text-align: center;
+    font-family: var(--font-titulo);
+    padding: 10px;
+    font-size: 2.5em;
+}
+
+.caixa-branca p {
+    font-family: var(--fonte-destaque);
+    font-size: 1.3em;
+    text-align: justify;
+    text-indent: 15px;
+}
+
+.botao {
+    padding: 15px;
+    border: none;
+    background-color: var(--color-section1);
+    font-family: var(--fonte-destaque);
+    font-weight: 900;
+    font-size: 1.4em;
+    margin: 10px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--color-black);
+}
+
+.botao:hover {
+    color: var(--color-header);
+    background-color: var(--color-black);
+}
+
+.section-conteudo1 {
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    height: auto;
+    padding: 20px;
+}
+
+.article-conteudo1 {
+    width: 100%;
+    max-width: 400px;
+}
+
+.article-conteudo1 h2 {
+    font-family: var(--font-titulo);
+    margin-bottom: 15px;
+    font-size: 1.6em;
+    text-align: center;
+}
+
+.article-conteudo1 p {
+    font-family: var(--fonte-destaque);
+    text-align: justify;
+    text-indent: 15px;
+    font-size: 1.2em;
+}
+
+.img-historia1 {
+    background-image: url(../img/historia1.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.img-historia2 {
+    background-image: url(../img/historia2.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+.img-historia3 {
+    background-image: url(../img/historia3.jpg);
+    background-size: cover;
+    height: 600px;
+    width: 100%;
+    max-width: 500px;
+    margin-top: 30px;
+}
+
+
+.img-fundo2 {
+    height: 600px;
+    background-image: url(../img/campo-tenis.jpg);
+    background-size: cover;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+footer{
+    background-color: var(--color-black); 
+    padding: 10px;
+}
+
+footer ul li a{
+    color: var(--color-header);
+}
+
+footer p{
+    color: var(--color-header);
+    font-family: (var(--fonte-nav));
+    text-align: center;
+    
+}
+
+
+
+
