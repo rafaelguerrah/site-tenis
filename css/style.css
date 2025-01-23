@@ -24,7 +24,7 @@ body {
 }
 
 header {
-    height: 100px;
+    height: auto;
     width: 100%;
 }
 
@@ -33,12 +33,16 @@ nav {
     justify-content: space-around;
     align-items: center;
     margin: 10px;
+    flex-wrap: wrap;
 }
 
 nav ul {
     display: flex;
     list-style: none;
     gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 li a {
@@ -60,7 +64,8 @@ li a:hover {
     justify-content: space-around;
     align-items: center;
     background-color: var(--color-section1);
-    height: 100px;
+    height: auto;
+    flex-wrap: wrap;
 }
 
 .localizacao .item {
@@ -82,6 +87,7 @@ li a:hover {
     height: 600px;
     background-image: url(../img/img-main.jpg);
     background-size: cover;
+    background-attachment: fixed;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -164,6 +170,7 @@ li a:hover {
 .img-historia1 {
     background-image: url(../img/historia1.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 600px;
     width: 100%;
     max-width: 500px;
@@ -173,6 +180,7 @@ li a:hover {
 .img-historia2 {
     background-image: url(../img/historia2.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 600px;
     width: 100%;
     max-width: 500px;
@@ -182,6 +190,7 @@ li a:hover {
 .img-historia3 {
     background-image: url(../img/historia3.jpg);
     background-size: cover;
+    background-repeat: no-repeat;
     height: 600px;
     width: 100%;
     max-width: 500px;
@@ -193,6 +202,8 @@ li a:hover {
     height: 600px;
     background-image: url(../img/campo-tenis.jpg);
     background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     justify-content: center;
     display: flex;
     align-items: center;
@@ -214,6 +225,57 @@ footer p{
     
 }
 
+@media (max-width: 768px) {
+    nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .img-fundo, .img-historia1, .img-historia2, .img-historia3 {
+        
+        margin: 10px auto;
+    }
+
+    .caixa-branca, .article-conteudo1 {
+        width: 90%;
+    }
+
+    .caixa-branca h1 {
+        font-size: 2em;
+    }
+
+    .caixa-branca p, .article-conteudo1 p {
+        font-size: 1em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    li a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    header {
+        height: auto;
+    }
+
+    .img-fundo, .img-historia1, .img-historia2, .img-historia3 {
+        
+        margin: 10px auto; 
+    }
+
+    .botao {
+        font-size: 1em;
+        padding: 10px;
+    }
+}
 
 
 
