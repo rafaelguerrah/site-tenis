@@ -1,4 +1,4 @@
-// Scroll suave para os links do menu
+
 document.querySelectorAll('.menu-site a').forEach(link => {
     link.addEventListener('click', function (e) {
         e.preventDefault(); 
@@ -52,4 +52,13 @@ document.querySelector('.botao').addEventListener('click', () => {
 document.getElementById('closeModal').addEventListener('click', () => {
     modal.style.visibility = 'hidden';
     modal.style.opacity = '0';
+});
+
+document.querySelectorAll('.menu-site li a').forEach(link => {
+    link.addEventListener('mouseover', () => {
+        link.style.color = '#f00'; 
+    });
+    link.addEventListener('mouseout', () => {
+        link.style.color = ''; 
+    });
 });
