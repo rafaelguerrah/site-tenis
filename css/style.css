@@ -26,6 +26,8 @@ body {
 header {
     height: auto;
     width: 100%;
+    background-color: var(--color-header);
+    
 }
 
 nav {
@@ -117,6 +119,7 @@ li a:hover {
     font-size: 1.3em;
     text-align: justify;
     text-indent: 15px;
+    letter-spacing: 0.02em;
 }
 
 .botao {
@@ -156,7 +159,7 @@ li a:hover {
 .article-conteudo1 h2 {
     font-family: var(--font-titulo);
     margin-bottom: 15px;
-    font-size: 1.6em;
+    font-size: 1.8em;
     text-align: center;
 }
 
@@ -204,10 +207,38 @@ li a:hover {
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    justify-content: center;
+    justify-content: space-around;
     display: flex;
     align-items: center;
 }
+
+.caixa-branca2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 70%;
+    height: auto;
+    background-color: var(--color-header);
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.788);
+}
+
+.caixa-branca2 h2 {
+    font-family: var(--font-titulo);
+    margin-bottom: 15px;
+    font-size: 1.8em;
+    text-align: center;
+}
+
+.caixa-branca2 p{
+    font-family: var(--fonte-destaque);
+    text-align: center;
+    text-indent: 15px;
+    font-size: 1.2em;
+}
+
 
 footer{
     background-color: var(--color-black); 
@@ -255,6 +286,16 @@ footer p{
     li a {
         font-size: 1em;
     }
+
+    .caixa-branca p{
+        font-size: 1em;
+        letter-spacing: 0.01em;
+        text-indent: 10px;
+    }
+
+    .caixa-branca h1{
+        font-size: 2em;
+    }
 }
 
 @media (max-width: 480px) {
@@ -275,6 +316,20 @@ footer p{
         font-size: 1em;
         padding: 10px;
     }
+
+    .caixa-branca p{
+        font-size: 1em;
+        letter-spacing: 0.01em;
+        text-indent: auto;
+    }
+    .caixa-branca h1{
+        font-size: 1em;
+    }
+
+    .img-fundo{
+        flex-direction: column;
+    }
+
 }
 
 
